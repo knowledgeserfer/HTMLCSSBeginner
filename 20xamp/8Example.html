@@ -1,0 +1,40 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			position property . This property can take one of the following values:
+
+			static : standard element positioning, default value
+			absolute : the element is positioned relative to the bounds of the container element if that property is positionnot equalstatic
+			relative : The element is positioned relative to its default position. Typically, the main purpose of relative positioning is not to move an element, but to set a new anchor point for the absolute positioning of nested elements.
+			fixed : the element is positioned relative to the browser window, this allows you to create fixed elements that do not change position when scrolling
+			
+			The browser viewport has top, bottom, right and left edges. For each of these four edges, there is a corresponding CSS property: left(padding from left edge), right(padding from right edge), top(padding from top of container), and bottom(padding from bottom). The values ​​of these properties are specified in pixels, em, or percentage. You do not need to specify values ​​for all four sides. Typically, only two values ​​are set - the top margin from the top and the left margin from the left.
+		-->		
+        <style>
+			.outer {
+                position: absolute;
+                left: 100px;
+                top: 50px;
+                width: 500px;
+                height: 250px;
+                border: 3px solid gray;
+            }
+            .inner{
+                position: absolute;
+                left: 100px;
+                top: 50px;
+                width: 100px;
+                height: 100px;
+                background-color: tomato
+            }
+        </style>
+    </head>
+    <body>
+       <div class="outer">
+            <div class="inner"></div>
+        </div>
+    </body>
+</html>

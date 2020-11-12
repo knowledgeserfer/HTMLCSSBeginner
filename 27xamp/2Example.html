@@ -1,0 +1,53 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			By default, all elements are arranged horizontally in order, if there is no more space in the line, then the elements are wrapped to the next line. But using the grid-auto-flow property you can change the direction of the items. This property takes two values:
+
+			row : default value, the elements are arranged in a row one after another, if there is not enough space in the row, the elements are wrapped to the next row
+			column : the elements are arranged in a column, if there is not enough space in the column, then the elements go to the next column
+		-->
+        <style>
+			*{
+                box-sizing: border-box;
+            }
+            html, body{
+                margin:0;
+                padding:0;
+            }
+            .grid-container {
+                display: grid;
+				height: 100vh;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                grid-auto-flow: column;
+            }
+            .grid-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: white;
+            }
+            .color1 {background-color: tomato;}
+            .color2 {background-color: darkgray;}
+            .color3 {background-color: orange;}
+            .color4 {background-color: black;}
+            .color5 {background-color: darkorange;}
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item color1">Grid Item 1</div>
+            <div class="grid-item color2">Grid Item 2</div>
+            <div class="grid-item color3">Grid Item 3</div>
+            <div class="grid-item color4">Grid Item 4</div>
+            <div class="grid-item color1">Grid Item 5</div>
+            <div class="grid-item color4">Grid Item 6</div>
+            <div class="grid-item color5">Grid Item 7</div>
+			<div class="grid-item color2">Grid Item 8</div>
+			<div class="grid-item color1">Grid Item 9</div>
+        </div>
+    </body>
+</html>

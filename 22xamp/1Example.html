@@ -1,0 +1,35 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			To play a video in HTML5 element used video . To customize this element, we can use the following attributes:
+
+			src: video source, it can be any video file
+			width: element width
+			height: element height
+			controls: adds playback controls
+			autoplay: sets autoplay
+			loop: sets the video to repeat
+			muted: mutes the sound by default
+			poster: shows releavant picture when video is not played
+			preload: auto, none, metadata
+		-->
+        <style>
+			
+        </style>
+    </head>
+    <body>
+		<h2>Seven testing principles video from one source</h2>
+        <video src="SevenTestingPrinciplesUA.wmv" width="375" height="280" controls="controls" poster="poster.png" preload="auto" loop="loop"></video>
+		<br/>
+		<h2>Seven testing principles audio from several sources</h2>
+		<video width="375" height="280" controls="controls" preload="auto">
+			<source src="SevenTestingPrinciplesUA1.mp4" type="video/mp4">
+			<source src="SevenTestingPrinciplesUA1.ogv" type="video/ogg">
+			<source src="SevenTestingPrinciplesUA.webm" type="video/webm">			
+			Your browser does not support the video tag or video formats.
+		</video>
+    </body>
+</html>

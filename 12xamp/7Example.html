@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!--
+			enabled : selects an element if it is selectable (that is, it has no disabled attribute set)
+
+			disabled : selects an element if it is not selectable (that is, it has the disabled attribute set)
+
+			checked : Selects an element if it has the checked attribute (for checkboxes and radio buttons)
+
+			default : selects the default items
+
+			valid : selects an element if its value passes HTML5 validation
+
+			invalid : selects an element if its value fails validation
+
+			in-range : selects an element if its value is in a specific range (for slider type elements)
+
+			out-of-range : selects an item if its value is not in a specific range
+
+			required : Selects an element if it has the required attribute set
+
+			optional : selects an element if it doesn't have the required attribute set
+		-->
+        <meta charset="utf-8">
+        <title>Form pseudo-classes</title>
+        <style>
+            :enabled{
+				border: 2px black solid;
+				color: red;
+			}
+        </style>
+    </head>
+     <body>
+        <p> <input type ="text" value ="Enabled"/> </p>
+        <p> <input type="text" disabled="disabled" value="Disabled" /> </p>
+    </body>
+</html>

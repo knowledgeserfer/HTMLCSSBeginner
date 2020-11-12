@@ -1,0 +1,33 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			The skew () function is used to skew an element :
+
+			transform: skew (X, Y);
+		-->
+        <style>
+			div{
+                background-color: tomato;
+                width: 150px;
+                height: 150px;
+				display: inline-block;
+                margin:20px;
+                padding: 50px 10px;
+                box-sizing: border-box;
+                border: 3px solid gray;
+            }
+            .skewed{
+                transform: skew(45deg, 20deg);
+                background-color:yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div class="skewed"></div>
+        <div></div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			The flex-flow property allows you to set values ​​for both properties flex-directionand flex-wrap.
+			flex-flow: [flex-direction] [flex-wrap]
+		-->
+        <style>
+			.flex-container {
+                display: flex;
+                border: 3px solid black;
+				margin: 5px;
+				flex-flow: row wrap;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: black;
+            }
+			.backgroundTomato{
+				background-color: tomato;
+			}
+			.backgroundYellow{
+				background-color: yellow;
+			}
+			.backgroundOrange{
+				background-color: orange;
+			}
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+			<div class="flex-item backgroundTomato">Flex Item 4</div>
+            <div class="flex-item backgroundYellow">Flex Item 5</div>
+            <div class="flex-item backgroundOrange">Flex Item 6</div>
+			<div class="flex-item backgroundTomato">Flex Item 7</div>
+            <div class="flex-item backgroundYellow">Flex Item 8</div>
+            <div class="flex-item backgroundOrange">Flex Item 9</div>
+        </div>
+    </body>
+</html>

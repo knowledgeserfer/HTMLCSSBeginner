@@ -1,0 +1,31 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			To play audio without video, HTML5 uses the audio element . It looks a lot like the video element. To customize the audio element, we can use the following attributes:
+
+			src: path to the audio file
+			controls: adds playback controls
+			autoplay: sets autoplay
+			loop: sets the repetition of the audio file
+			muted: mutes the sound by default
+			preload: sets the file upload mode
+		-->
+        <style>
+			
+        </style>
+    </head>
+    <body>
+		<h2>Seven testing principles audio from one source</h2>
+        <audio src="SevenTestingPrinciplesUA.mp3" controls="controls"></audio>
+		<br/>
+		<h2>Seven testing principles audio from several sources</h2>
+		<audio controls="controls">
+			<source src="SevenTestingPrinciplesUA1.mp3" type="audio/mpeg">
+			<source src="SevenTestingPrinciplesUA1.m4a" type="audio/aac">
+			<source src="SevenTestingPrinciplesUA.ogg" type="audio/ogg">
+		</audio>
+    </body>
+</html>

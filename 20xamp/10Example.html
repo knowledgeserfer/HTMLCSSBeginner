@@ -1,0 +1,53 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			By default, when two border elements match, the element that was last defined in the html markup is displayed on top of the other. However, the z-index property allows you to change the order of elements when they overlap. The property takes a number as its value. Items with a larger z-index value will appear on top of items with a lower z-index.
+			z-index: 2;
+		-->		
+        <style>
+			body{ 
+                margin:0;
+                padding:0;
+            }
+            .content{
+                position: relative;
+                top: 15px;
+                left: 20px;
+                width: 300px;
+                height: 200px;
+                background-color: gray;
+                border: 3px solid black;
+            }
+            .tomatoBlock{ 
+                position: absolute;
+                top: 30px;
+                left:60px;
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+				z-index: 2;
+				
+				
+            }
+            .yellowBlock{ 
+                position: absolute;
+                top: 90px;
+                left: 90px;
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+				z-index: 3;
+				
+            }
+        </style>
+    </head>
+    <body>
+       <div class="content">
+            <div class="tomatoBlock"></div>
+            <div class="yellowBlock"></div>
+        </div>
+    </body>
+</html>

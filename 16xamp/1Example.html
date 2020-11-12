@@ -1,0 +1,65 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			The padding property sets the padding from the border of an element to its inner content. As with the margin property, CSS has four properties that set the margin for each side:
+			padding-top : top padding
+			padding-bottom : bottom padding
+			padding-left : padding to the left
+			padding-right : padding to the right
+			
+			Two Values
+			The syntax for the CSS padding property (with 2 values) is:
+
+			padding: top_bottom left_right;
+			When two values are provided, the first value will apply to the top and bottom of the element. The second value will apply to the left and right sides of the element.
+
+			Three Values
+			The syntax for the CSS padding property (with 3 values) is:
+
+			padding: top right_left bottom;
+			
+		-->
+        <style>
+			div{
+				margin:30px 25px 40px 35px;
+				border: 3px solid tomato;
+			}
+			div.outer {
+				padding-top: 30px;
+				padding-right: 25px;
+				padding-bottom: 35px;
+				padding-left: 28px;
+			}
+			div.inner {
+				height: 80px;
+				background-color: gray;
+			}
+			div.outer1 {
+				padding: 30px 25px 35px 28px;
+			}
+			div.outer2 {
+				padding: 35px 25px;
+			}
+			div.outer3 {
+				padding: 35px 30px 25px;
+			}
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+			<div class="inner"> </div>
+		</div>
+		<div class="outer1">
+			<div class="inner"></div>
+		</div>
+		<div class="outer2">
+			<div class="inner"> </div>
+		</div>
+		<div class="outer3">
+			<div class="inner"> </div>
+		</div>
+    </body>
+</html>

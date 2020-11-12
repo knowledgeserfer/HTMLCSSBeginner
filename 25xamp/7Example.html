@@ -1,0 +1,37 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			flex-shrink
+			If the flex container does not have enough space to place an item, then we can determine the further behavior of this item using the flex-shrink property . It specifies how the element will be truncated in relation to other elements.
+
+			The property takes a number as its value. By default, its value is 1.
+		-->
+        <style>
+			.flex-container {
+                display: flex;
+                border:3px solid gray;
+                width:600px;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: white;
+            }
+            .item1 {background-color: tomato; flex-basis: 300px; flex-shrink:1;}
+            .item2 {background-color: darkgray; flex-basis: 300px; flex-shrink:2;}
+            .item3 {background-color: orange; flex-basis: 300px; flex-shrink:3;}
+			
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item item1">Flex Item 1</div>
+            <div class="flex-item item2">Flex Item 2</div>
+            <div class="flex-item item3">Flex Item 3</div>
+        </div>
+    </body>
+</html>

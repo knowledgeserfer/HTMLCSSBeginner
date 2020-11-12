@@ -1,0 +1,45 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			The align-self property allows you to override the property value align-items for a single element. It can take all the same values ​​plus the "auto" value:
+
+			auto : the default value at which the item gets its value from the property align-items that is defined in the flex container. If no such style is defined in the container, then the value is applied stretch.
+			stretch
+			flex-start
+			flex-end
+			center
+			baseline
+		-->
+        <style>
+			.flex-container {
+                display: flex;
+                border:3px solid gray;
+                justify-content: space-between;
+                align-items: stretch;
+                height:90px;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: white;
+            }
+            .item1 {background-color: tomato; align-self: center; }
+            .item2 {background-color: darkgray; align-self: flex-start;}
+            .item3 {background-color: orange; align-self: flex-end;}
+            .item4 {background-color: black; align-self: center;}
+        </style>
+    </head>
+    <body>
+        <h2>Align-self</h2>
+        <div class="flex-container">
+            <div class="flex-item item1">Flex Item 1</div>
+            <div class="flex-item item2">Flex Item 2</div>
+            <div class="flex-item item3">Flex Item 3</div>
+            <div class="flex-item item4">Flex Item 4</div>
+        </div>
+    </body>
+</html>

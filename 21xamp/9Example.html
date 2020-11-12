@@ -1,0 +1,50 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			Animation relies on a sequential change of keyframes (keyframes). Each keyframe defines one set of values ​​for the animated properties. And the successive change of such keyframes will actually represent the animation.
+
+				In fact, transitions use the same model - two keyframes are also implicitly defined - a start and an end, and the transition itself represents a transition from the start to the end keyframe. The only difference with animation in this case is that you can define multiple intermediate keyframes for an animation.
+
+				In general, a CSS3 keyframe declaration has the following form:
+
+				@keyframes animation_name {
+					from {
+						/ * initial CSS property values ​​* /
+					}
+					to {
+						/ * final CSS property values ​​* /
+					}
+				}
+
+						
+		-->
+        <style>
+			@keyframes backgroundColorAnimation {
+                from {
+                    background-color: tomato;
+                }
+                to {
+                    background-color: yellow;
+                }
+            }
+            div{
+                width: 150px;
+                height: 150px;
+                margin: 50px 30px;
+                border: 3px solid gray;
+                background-color: tomato;
+                animation-name: backgroundColorAnimation;
+                animation-duration: 3s;
+				animation-fill-mode: forwards;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+		<div></div>
+		<div></div>
+    </body>
+</html>

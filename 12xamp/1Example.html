@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!--
+			first-child : represents the element that is the first child
+
+			last-child : represents the element that is the last child
+
+			only-child : represents an element that is the only child in some container
+
+			only-of-type : selects an element that is the only element of a specific type (tag) in some container
+
+			nth-child (n) : represents the child element that has a specific number n, for example the second child
+
+			nth-last-child (n) : represents the child element that has a specific number n, starting from the end
+
+			nth-of-type (n) : selects a child of a specific type that has a specific number
+
+			nth-last-of-type (n) : selects a child of a specific type that has a specific number starting from the end
+		-->
+        <meta charset="utf-8">
+        <title>Child pseudo-classes</title>
+        <style>
+			a:first-child{
+			
+				color: red;
+			}
+        </style>
+    </head>
+    <body>
+		<h3>Header for group 1</h3>
+		<div>
+			<a>Item 1</a><br/>
+			<a>Item 2</a><br/>
+			<a>Item 3</a>
+		</div>
+		<h3>Header for group 2</h3>
+		<div>
+			<p>Best items to choose</p>
+			<a>Item 4</a><br/>
+			<a>Item 5</a><br/>
+			<a>Item 6</a>
+		</div>
+    </body>
+</html>

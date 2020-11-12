@@ -1,0 +1,42 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			Property flex is a union of properties flex-basis, flex-shrink and flex-grow and has the following formal syntax:
+
+			flex: [flex-grow] [flex-shrink] [flex-basis]
+			By default, the property flexis 0 1 auto.
+
+			In addition to specific values ​​for each of the sub-properties, we can set the flex property to one of three general values:
+			flex: none: Equivalent to no 0 0 autoflex item stretching or clipping when the container is zoomed in and out
+			flex: auto: equivalent to value 1 1 auto
+			flex: initial: equivalent to value 0 1 auto
+		-->
+        <style>
+			.flex-container{
+                display: flex;
+                border:1px solid gray; 
+            }
+            .flex-item{
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: white;
+            }
+            .item1{background-color: tomato; width: 200px; flex: 0 0 auto;}
+            .item2{background-color: darkgray; width: 200px; flex: 1 0 auto;}
+            .item3{background-color: orange; width: 200px; flex: 0 1 auto;}
+            .item4{background-color: black; width: 200px; flex: 1 1 auto;}
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item item1">Flex Item 1</div>
+            <div class="flex-item item2">Flex Item 2</div>
+            <div class="flex-item item3">Flex Item 3</div>
+            <div class="flex-item item4">Flex Item 4</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			Within a grid, we can define grid areas. Areas are defined using two vertical and two horizontal grid lines, which actually define the space the area occupies. In this regard, an area is not equivalent to a single grid cell and may include multiple cells. Regions are especially useful for defining semantic relationships between different parts of a page layout.
+
+			The grid container uses the grid-template-areas property to define areas.
+		-->
+        <style>
+			*{
+                box-sizing: border-box;
+            }
+            html, body{
+                margin:0;
+                padding:0;
+            }
+            .grid-container{
+                display: grid;
+				height:100vh;
+                grid-template-areas: "header header"
+                                     "sidebar content";
+                grid-template-columns: 150px 1fr;
+                grid-template-rows: 100px 1fr;
+            }
+            .header{ 
+                grid-area: header; 
+                background-color: tomato; 
+                border: 3px solid gray; 
+            }
+            .sidebar{ 
+                grid-area: sidebar; 
+                background-color: darkgray; 
+                border: 3px solid gray;
+            }
+            .content{ 
+                grid-area: content; 
+                background-color: black; 
+                border: 3px solid gray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="header"></div>
+            <div class="sidebar"></div>
+            <div class="content"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			 table value essentially turns the element into a table.
+		-->
+        <style>
+			body{
+				background-color: tomato;
+				color: white;
+				font-size: 26px;
+			}
+			 ul{
+                display: table;
+                margin: 0;
+            }
+            li{
+                list-style-type: none;
+                display: table-cell;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact us</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			
+		-->
+        <style>
+			*{
+                box-sizing: border-box;
+            }
+            html, body {
+                padding: 0;
+                margin: 0;
+                font-family: Verdana, sans-serif;
+            }
+ 
+            body {
+                color: white;
+                font-size: 22px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+ 
+            main {
+                display: flex;
+                flex-direction: column;
+            }
+ 
+            article {
+                background-color: tomato;
+                flex: 2 2 180px;
+                padding: 10px;
+            }
+ 
+            nav, aside {
+                flex: 1;
+                background-color: darkgray;
+				border: 3px solid black;
+            }
+ 
+            nav {
+                order: -1;
+            }
+             
+            header, footer {
+                flex: 0 0 80px;
+                background-color: tomato;
+				border: 3px solid black;
+            }
+             
+            @media screen and (min-width: 600px) {
+                 
+                body{
+                    min-height: 100vh;
+                }
+                main {
+                    flex-direction: row;
+                    min-height: 100%;
+                    flex: 1 1 auto;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>Header goes right here</div>
+        </header>
+        <main>
+            <article>
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+            <nav>
+                <div>Navigation bar goes here</div>
+            </nav>
+            <aside>
+                <div>Sidebar goes here</div>
+            </aside>
+        </main>
+        <footer>
+            <div>Footer goes here</div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			float property can take one of the following values:
+			left: the element floats to the left, and any content that goes below it flows around the right edge of the element
+			right: element moves to the right
+			none: cancels the float and returns the object to its normal position
+			When applying the float property to styled elements other than the img element, it is recommended that you set the width property.
+		-->
+        <style>
+			.image { 
+            margin:10px;
+            margin-top:0px;
+			float:left;
+			
+        }
+        .sidebar{
+            border: 5px solid tomato;
+            background-color: gray;
+            width: 150px;
+            padding: 10px;
+            margin-left:10px;
+            font-size: 20px;
+			float:right;
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div class="sidebar">Lorem ipsum dolor sit amet</div>
+            <img src="background.jpg" class="image" alt="Sunset" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </body>
+</html>

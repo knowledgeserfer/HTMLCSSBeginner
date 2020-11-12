@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--
+			Features applied in CSS3 Media Query:
+			aspect-ratio : the ratio of the width to height of the display area (browser)
+			device-aspect-ratio : the ratio of the width to the height of the device screen
+			max-width / min-width and max-height / min-height : maximum and minimum width and height of the display area (browser)
+			max-device-width / min-device-width and max-device-height / min-device-height : the maximum and minimum width and height of the mobile device screen
+			orientation : orientation (portrait or landscape)
+		-->
+		<style>
+		body {
+		  background-color: black;
+		  color: green;
+		  font-size: 23px;
+		}
+
+		@media screen and (min-width: 600px) {
+		  body {
+			background-color: tomato;
+			color: white;
+			font-size: 25px;
+		  }
+		}
+		@media screen and (min-width: 768px) {
+		  body {
+			background-color: dodgerblue;
+			color: yellow;
+			font-size: 26px;
+		  }
+		}
+		</style>
+	</head>
+	<body>
+
+		<h1>Lorem ipsum sit amet</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	</body>
+</html>

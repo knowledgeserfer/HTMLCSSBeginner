@@ -1,0 +1,63 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			
+		The background-size property allows you to set the size of the background image. To set the size, you can use either units of measurement, for example, pixels, or percent, or one of the predefined values:
+
+		contain: Scales the image to the largest side while maintaining the aspect ratio
+		cover: Scales the image to the smallest side while maintaining the aspect ratio
+		auto: default, the image is displayed at full size
+		
+		If you need to scale the image so that it fits the background better, then for both settings you can set the value 100%:
+		background-size: 100% 100%;
+		
+		If the exact dimensions are specified, then the width is indicated first, and then the height of the image:
+		background-size: 200px 150px; / * width 200px, height 150px * /
+		
+		You can set an exact value for one dimension - width or height, and set automatic dimensions for the other so that the browser itself displays the exact values:
+		background-size: 200px auto; / * width 200px, auto height * /
+		-->
+        <style>
+		
+			div{
+            width: 700px;
+            height: 300px;
+            margin: 10px;
+            font-weight: bold;
+			font-size: 25px;
+            border: 5px solid black;
+            background-image: url(background.jpg);
+             
+        }
+        .imaged1{
+            background-size: cover;
+        }
+		.imaged2{
+            background-size: contain;
+        }
+		.imaged3{
+            background-size: auto;
+        }
+		.imaged4{
+            background-size: 100% 100%;
+        }
+        .imaged5{
+            background-size: 150px 120px;
+        }
+		.imaged6{
+            background-size: 150px auto;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="imaged1">background-size: cover</div>
+		<div class="imaged2">background-size: contain</div>
+		<div class="imaged3">background-size: auto</div>
+        <div class="imaged4">background-size: 100% 100%</div>
+		<div class="imaged5">background-size: 150px 120px</div>
+		<div class="imaged6">background-size: 150px auto</div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			To create a flex container, you need to set its display style property to one of two values: flex or inline-flex.
+		-->
+        <style>
+			.flex-container {
+                display: flex;
+                border: 3px solid black;
+            }
+            .inline-flex-container {
+                display: inline-flex;
+                border:3px solid black;
+                margin-top:10px;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: black;
+            }
+			.backgroundTomato{
+				background-color: tomato;
+			}
+			.backgroundYellow{
+				background-color: yellow;
+			}
+			.backgroundOrange{
+				background-color: orange;
+			}
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+        </div>
+         
+        <div class="inline-flex-container">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+        </div>
+    </body>
+</html>

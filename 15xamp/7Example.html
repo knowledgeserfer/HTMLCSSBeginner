@@ -1,0 +1,72 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			empty-cells property allows you to style empty cells with one of the following values:
+			show: empty cells are displayed, default value
+			hide: empty cells are not displayed
+			
+			caption-side property controls the position of the caption and can take the following values:
+			top: positioning the title at the top (default)
+			bottom: positioning the title at the bottom
+			
+			table-layout property controls the size of the table. By default, this property is autoset so that the browser sets the width of the table columns automatically based on the width of the widest cell in the column. And the width of the entire table is added from the width of individual columns.
+			table-layout: fixed;
+			width: 400px;
+			
+			vertical-align property . This property takes the following values:
+			top: align content to the top of the cell
+			baseline: align the first line of text to the top of the cell
+			middle: center align (default)
+			bottom: align to bottom
+			The vertical-align property only applies to elements <th>and <td>
+			
+			td, th {
+			border: solid 2px orange;
+			vertical-align: bottom;
+			height: 20px;
+}
+		-->
+        <style>
+			table{
+			border: 3px solid black;
+			border-spacing: 5px;
+		}
+		
+		td, th{
+            border: solid 2px orange;
+        }
+		.hidden-empty-cells{
+            empty-cells: show;
+        }
+		
+		caption{
+			font-weight: bold;
+		}
+		
+		.captionBottom{
+			caption-side: top;
+		}
+        </style>
+    </head>
+    <body>
+		<h3>Example 1</h3>
+		<table>
+			<caption>Great laptops</caption>
+			<tr><th>Model</th><th> Manufacturer</th><th> Price</th> </tr>
+			<tr> <td>GT63 i9-9880H/32GB/512+1TB/Win10 RTX2080</td> <td>MSI</td> <td>152000</td> </tr>
+			<tr> <td>ROG Zephyrus Duo 15 GX550LXS-HC141R</td> <td>Asus</td> <td>134000</td> </tr>
+			<tr> <td>Surface Laptop 3 - 15" i7/1000/32</td> <td>Microsoft</td> <td>125000</td> </tr>
+		</table>
+		<h3>Example 2</h3>
+		<table class = "hidden-empty-cells">
+			<caption class = "captionBottom">Great laptops</caption>
+			<tr><th>Model</th><th> Manufacturer</th><th> Price</th> </tr>
+			<tr> <td>GT63 i9-9880H/32GB/512+1TB/Win10 RTX2080</td> <td>MSI</td> <td>152000</td> </tr>
+			<tr> <td>ROG Zephyrus Duo 15 GX550LXS-HC141R</td> <td></td> <td></td> </tr>
+			<tr> <td>Surface Laptop 3 - 15" i7/1000/32</td> <td>Microsoft</td> <td>125000</td> </tr>
+		</table>
+    </body>
+</html>

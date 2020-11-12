@@ -1,0 +1,41 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			flex-basis
+			A flex container can grow or shrink along its center axis, for example, when the browser is resized, if the container is non-fixed. And along with the container, its flex items can also grow and shrink. The flex-basis property determines the initial size of a flex item before it starts resizing to fit the flex container.
+
+			This property can take the following values:
+
+			auto : the initial size of the flex item is set automatically
+			
+			content : the size of the flex item is determined by its content, but this value is not supported by all modern browsers, so it should be avoided for now
+
+			numerical value : we can set a specific numerical value for the element's dimensions
+		-->
+        <style>
+			.flex-container {
+                display: flex;
+                border:1px solid gray;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: white;
+            }
+            .item1 {background-color: tomato; flex-basis: auto; width:160px;}
+            .item2 {background-color: darkgray; flex-basis: auto; width:auto;}
+            .item3 {background-color: orange; flex-basis: 220px;width:160px;}
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item item1">Flex Item 1</div>
+            <div class="flex-item item2">Flex Item 2</div>
+            <div class="flex-item item3">Flex Item 3</div>
+        </div>
+    </body>
+</html>

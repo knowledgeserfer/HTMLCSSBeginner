@@ -1,0 +1,35 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			
+			
+			display property can take the following values:
+			inline: element becomes line, like words in a line of text
+			block: the element becomes block like a paragraph
+			inline-block: the element is positioned as a line of text
+			list-item: the item is positioned as a list item, usually with the addition of a bullet in the form of a period or ordinal
+			run-in: the block type of the element depends on the surrounding elements
+			flex: allows flexible positioning of elements
+			table, inline-table: allows you to arrange items in a table
+			none: element not visible and removed from html markup
+
+			So the block value allows you to define a block element. Such an element is visually separated from adjacent elements by a line break, such as the p paragraph element or the div element, which are block by default and are visually wrapped on a new line when rendering a web page.
+		-->
+        <style>
+			 span{
+                color: purple;
+            }
+            .blockSpan{
+                display: block;
+            }
+			
+        </style>
+    </head>
+    <body>
+        <div>This is <span>inline</span> element span</div>
+        <div>This is <span class="blockSpan">block</span> element span</div>
+    </body>
+</html>

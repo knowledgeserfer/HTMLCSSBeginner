@@ -1,0 +1,42 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			A radial gradient comes in two shapes: circular and elliptical. Elliptical shape represents an elliptical gradient spread and is specified using the keyword ellipse:
+
+			background-image: radial-gradient(ellipse, white, black);
+			Since this is the default value for the gradient, it can be omitted when used.
+
+			The circular shape represents the spread of the gradient in circles from the center outward. The keyword is used for this circle:
+
+			background-image: radial-gradient(circle, white, black);
+			Typically, the center of the radial gradient is at the center of the element, but this behavior can be overridden by specifying a value for the parameter background-position:
+
+			background-image: radial-gradient(25% 30%, circle, white, black);
+		-->
+        <style>
+			div{
+			width: 300px;
+			height: 200px;
+			border-radius: 100px;
+			
+			background-color:gray;
+			background-image:radial-gradient(circle, tomato, yellow);
+			background-image:-moz-radial-gradient(circle, tomato, yellow);
+			background-image:-webkit-radial-gradient(25% 30%, circle, tomato, yellow, blue);
+		}
+		p{
+			margin: 0;
+			padding-top: 60px;
+			text-align: center;
+			color: blue;
+		}
+        </style>
+    </head>
+    <body>
+			<div><p>Radial Gradient</p></div>
+            
+    </body>
+</html>

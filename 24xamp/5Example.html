@@ -1,0 +1,69 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			wrap : If the items do not fit into the flex container, then creates additional rows in the container to accommodate the items. Row arrangement adds additional rows, Column arrangement adds additional columns
+
+			wrap-reverse : same as the wrap value, only elements are laid out in reverse order
+		-->
+        <style>
+			.flex-container {
+                display: flex;
+                border: 6px solid purple;
+				margin: 5px;
+				width:383px;
+				height: 155px;
+				flex-wrap:wrap;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: black;
+				border: 3px solid black;
+            }
+			.backgroundTomato{
+				background-color: tomato;
+			}
+			.backgroundYellow{
+				background-color: yellow;
+			}
+			.backgroundOrange{
+				background-color: orange;
+			}
+			.column {
+                flex-direction: column;
+            }
+            .column-reverse {
+                flex-direction: column-reverse;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container column">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+			<div class="flex-item backgroundTomato">Flex Item 4</div>
+            <div class="flex-item backgroundYellow">Flex Item 5</div>
+            <div class="flex-item backgroundOrange">Flex Item 6</div>
+			<div class="flex-item backgroundTomato">Flex Item 7</div>
+            <div class="flex-item backgroundYellow">Flex Item 8</div>
+            <div class="flex-item backgroundOrange">Flex Item 9</div>
+        </div>
+         
+        <div class="flex-container column-reverse">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+			<div class="flex-item backgroundTomato">Flex Item 4</div>
+            <div class="flex-item backgroundYellow">Flex Item 5</div>
+            <div class="flex-item backgroundOrange">Flex Item 6</div>
+			<div class="flex-item backgroundTomato">Flex Item 7</div>
+            <div class="flex-item backgroundYellow">Flex Item 8</div>
+            <div class="flex-item backgroundOrange">Flex Item 9</div>
+        </div>
+    </body>
+</html>

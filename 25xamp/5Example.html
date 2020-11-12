@@ -1,0 +1,49 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			The align-content property controls the alignment of rows (rows and columns) in a flex container and therefore applies if the property flex-wrapis set to wrapor wrap-reverse. The align-content property can have the following values:
+
+			stretch : the default to stretch rows (columns) to take up all the free space
+			flex-start : rows (columns) are aligned to the beginning of the container (for rows, this is the top edge, for columns, this is the left edge of the container)
+			flex-end : rows (columns) are aligned to the end of the container (rows - bottom, columns - right)
+			center : rows (columns) are positioned to the center of the container
+			space-between : rows (columns) are evenly spaced across the container, and the same indents are formed between them. If there is not enough space in the container, then it acts in the same way asflex-start
+			space-around : rows (columns) equally distribute the container's space, and the distance between the first and last row (column) and the container's borders is half the distance between adjacent rows (columns).
+		-->
+        <style>
+			.flex-container {
+                display: flex;
+                border:1px solid gray;
+                flex-wrap: wrap;
+                height:180px;
+				flex-direction: column;
+                align-content: space-between;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: white;
+            }
+            .item1 {background-color: tomato;}
+            .item2 {background-color: darkgray;}
+            .item3 {background-color: orange;}
+            .item4 {background-color: black;}
+            .item5 {background-color: dodgerblue;}
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item item1">Flex Item 1</div>
+            <div class="flex-item item2">Flex Item 2</div>
+            <div class="flex-item item3">Flex Item 3</div>
+            <div class="flex-item item4">Flex Item 4</div>
+            <div class="flex-item item5">Flex Item 5</div>
+            <div class="flex-item item1">Flex Item 6</div>
+            <div class="flex-item item2">Flex Item 7</div>
+            <div class="flex-item item3">Flex Item 8</div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			Flex items in a flex container can have a specific direction, namely they can be laid out in rows or in columns. To control the direction of elements, CSS3 provides the flex-direction property. It determines the direction of elements and can take the following values:
+
+			row : the default, which arranges items in a row from left to right
+			row-reverse : elements are also arranged as a row only in reverse order from right to left
+			column : items are arranged in a column from top to bottom
+			column-reverse : items are arranged in a column in reverse order from bottom to top
+		-->
+        <style>
+			.flex-container {
+                display: flex;
+                border: 3px solid black;
+				margin: 5px;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: black;
+            }
+			.backgroundTomato{
+				background-color: tomato;
+			}
+			.backgroundYellow{
+				background-color: yellow;
+			}
+			.backgroundOrange{
+				background-color: orange;
+			}
+			.row {
+                flex-direction: row;
+            }
+            .row-reverse {
+                flex-direction: row-reverse;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container row">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+        </div>
+         
+        <div class="flex-container row-reverse">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Text fields in HTML5</title>
+	</head>
+	<body>
+	<!--
+		Using a number of additional attributes, you can customize the text field:
+
+		dirname : sets the direction of the text
+
+		maxlength : the maximum number of characters in a text field
+
+		pattern : defines the pattern that the input text should match
+
+		placeholder : sets the text that appears by default in the text box
+
+		readonly : makes the text field read-only
+
+		required : indicates that the text field must have a value
+
+		size : sets the width of the text box in visible characters
+
+		value : sets the default value in the text box
+
+		-->
+		<form>
+            <p><input type="text" name="userName" placeholder="Enter name" size="20" required="required" /></p>
+            <p><input type="text" name="userPhone" placeholder="Enter phone number" size="20" maxlength="5" /></p>
+            <p>
+                <button type="submit">Submit</button> 
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+		
+		
+		<form>
+            <p><input list="itemsList" type="text" name="model" placeholder="Enter item" /></p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+        
+		<datalist id="itemsList">
+            <option value="item1"></option>
+            <option value="item2"></option>
+            <option value="item3"></option>
+			<option value="item4"></option>
+        </datalist>
+	</body>
+</html>

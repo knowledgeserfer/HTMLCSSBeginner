@@ -1,0 +1,45 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			inline and inline-block
+			To create a horizontal navigation bar, we need to make each li element inline, that is, set for it display: inline. After that, for the element of the link that is located in the element li, we can set display: inline-block
+			
+		-->		
+        <style>
+			ul.nav{
+                margin-left: 0px;
+                padding-left: 0px;
+                list-style: none;
+            }
+            .nav li { 
+                display: inline; 
+            }
+            ul.nav a {
+                display: inline-block;
+				color: white;
+                width: 5em;
+                padding:10px;
+                margin: 0 5px;
+                background-color: tomato;
+                border: 3px dotted gray;
+                text-decoration: none;
+                text-align: center;
+            }
+            ul.nav a:hover{
+                background-color: orange;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			STEP 1
+			#leftSidebar{
+				background-color: #ddd;
+				float: left;
+				width: 140px;
+			}
+			#rightSidebar{
+				background-color: #bbb;
+				float: right;
+				width: 140px;
+			}
+			#main{
+				background-color: #eee;
+				height: 200px;
+				margin-left: 160px;
+				margin-right: 160px;
+			}
+		-->
+        <style>
+			div{
+                margin: 10px;
+                border: 3px solid gray;
+                font-size: 22px;
+                height: 90px;
+				color: white;
+            }
+            #header{ 
+                background-color: tomato;
+            }
+            #leftSidebar{
+                background-color: tomato;
+				float: left;
+				width: 140px;
+            }
+            #rightSidebar{
+                background-color: tomato;
+				float: right;
+				width: 140px;
+            }
+            #main{
+                background-color: tomato;
+                height: 200px;
+				margin-left: 160px;
+				margin-right: 160px;
+            }
+            #footer{ 
+                background-color: tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">Header goes here</div>
+        <div id="leftSidebar">Left sidebar</div>
+        <div id="rightSidebar">Right sidebar</div>
+        <div id="main">Main content goes here</div>
+        <div id="footer">Footer goes here</div>
+    </body>
+</html>

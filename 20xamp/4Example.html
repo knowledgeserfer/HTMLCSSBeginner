@@ -1,0 +1,42 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			Browsers often interpret element sizes in a peculiar way. In particular, all the elements of the default properties for the box-sizing value is content-box , i.e. when determining the width and height element browser will add to the value of the properties widthand heightalso the padding padding and border width. As a result, this can lead to the loss of floating elements from those blocks that are intended for them. Therefore, it is often a good idea to set the box-sizing property to border-box for all elements so that all elements are sized equally and their widths represent only the property value width.
+			* {
+				box-sizing: border-box;
+			}
+			
+		-->		
+        <style>
+			*{
+				box-sizing: border-box;
+			}
+			
+			#sidebar{
+                float: left;
+                width: 25%;
+                padding: 10px;
+            }
+            #main{
+                border-left: 3px solid gray;
+                width:75%;
+                padding: 15px;
+                margin-left: 25%; 
+            }
+        </style>
+    </head>
+    <body>
+       <div id="sidebar">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div id="main">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </body>
+</html>

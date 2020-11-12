@@ -1,0 +1,56 @@
+<! DOCTYPE html>
+<html>
+    <head>
+		<!--
+			List of available pseudo-classes:
+
+			: root : allows you to select the root element of the web page, probably the least useful selector, since on the correct web page, the root element is almost always the element<html>
+
+			: link : applies to links and represents the link in its normal state, which has not yet been navigated to
+
+			: visited : applies to links and represents the link that the user has already clicked on
+
+			: active : applies to links and represents the link the moment the user clicks on it
+
+			: hover : represents the element that the user hovers over. Applies primarily to links, but can also apply to other elements, such as paragraphs.
+
+			: focus : represents an element that receives focus, that is, when the user presses the tab key or clicks on the input field (for example, a text field)
+
+			: not : allows you to exclude elements from the list of elements to which the style is applied
+
+			: lang : style elements based on attribute value lang
+
+			: empty : selects elements that do not have nested elements, i.e. are empty
+		-->
+        <meta charset = "utf-8">
+        <title> CSS3 Pseudo-Classes </title>
+        <style>
+			body{
+				background-color: gray;
+			}
+            a:link{
+			color: blue; 
+			text-decoration: none
+			}
+            a:visited {
+			color: purple; 
+			text-decoration: none
+			}
+            a:hover{
+			color: tomato; 
+			text-decoration: underline
+			}
+            a:active{
+			color: yellow; 
+			text-decoration: underline
+			}
+			input:hover{
+			border: 3px solid red;
+			}
+        </style>
+    </head>
+    <body>
+        <a href="#"> CSS3 Tutorial </a>
+		<input type = "text" />
+    </body>
+</html>

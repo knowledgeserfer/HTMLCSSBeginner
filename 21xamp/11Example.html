@@ -1,0 +1,132 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			As mentioned above, animation, in addition to two standard keyframes, allows you to use many intermediate ones.
+			
+			animation-nameAnimations are listed as the property value , separated by commas, and the animation-durationtime of these animations is also specified for the property, separated by commas . The name of the animation and its time are matched by position, that is, the opacityAnimation will last 3 seconds.
+			
+			animation-iteration-count property determines how many times the animation will repeat. For example, 3 animation repeats in a row:
+
+			animation-iteration-count: 3;
+			If it is necessary for the animation to run an infinite number of times, then this property is assigned the value infinite :
+
+			animation-iteration-count: infinite;
+			When you repeat, the animation will start over from the start keyframe. But with the property the animation-direction: alternate; opposite direction of the animation when repeated. That is, it will start at the end keyframe, and then it will transition to the start frame:
+
+			animation-name: backgroundColorAnimation, opacityAnimation;
+			animation-duration: 2s, 2s;
+			animation-iteration-count: 3;
+			animation-direction: alternate;
+			When the animation ends, the browser sets the animated element to the style it would have before applying the animation. But the property animation-fill-mode: forwardsallows you to set exactly the one that was in the last frame as the final value of the animated property:
+
+			animation-name: backgroundColorAnimation;
+			animation-duration: 2s;
+			animation-iteration-count: 3;
+			animation-direction: alternate;
+			animation-fill-mode: forwards;
+			Delay animation
+			Using the animation-delay property, you can define the animation delay time:
+
+			animation-name: backgroundColorAnimation;
+			animation-duration: 5s;
+			animation-delay: 1s; / * 1 second delay * /
+			Animation smoothness function
+			As with transitions, you can apply all the same easing functions to animations:
+			animation-timing-function
+
+			linear : linear easing function, property changes evenly over time
+
+			ease : a ease function that accelerates the animation towards the middle and slows down towards the end, providing a more natural change
+
+			ease-in : ease function that only accelerates at the start
+
+			ease-out : ease function that only accelerates at the start
+
+			ease-in-out : an ease function that accelerates the animation towards the middle and decelerates towards the end, providing a more natural change
+
+			cubic-bezier - Cubic bezier is used for animation
+
+			The animation-timing-function property is used to set the smoothness function :
+
+			@keyframes backgroundColorAnimation {
+				from {
+					background-color: tomato;
+				}
+				to {
+					background-color: yellow;
+				}
+			}
+			div {
+				width: 150px;
+				height: 150px;
+				margin: 50px 30px;
+				border: 1px solid gray;
+							
+				animation-name: backgroundColorAnimation;
+				animation-duration: 3s;
+				animation-timing-function: ease-in-out;
+			}
+			Animation property
+			The animation property is a shorthand way to define the above properties:
+
+			animation: animation-name animation-duration animation-timing-function animation-iteration-count animation-direction animation-delay animation-fill-mode
+			The first two parameters, which provide the animation title and timing, are required. The rest of the values ​​are optional.
+
+			Let's take the following set of properties:
+
+			animation-name: backgroundColorAnimation;
+			animation-duration: 5s;
+			animation-timing-function: ease-in-out;
+			animation-iteration-count: 3;
+			animation-direction: alternate;
+			animation-delay: 1s;
+			animation-fill-mode: forwards;
+			This set will be equivalent to the following animation definition:
+
+			animation: backgroundColorAnimation 5s ease-in-out 3 alternate 1s forwards;
+				
+		-->
+        <style>
+			@keyframes backgroundColorAnimation {
+                from {
+					background-color: tomato;
+				}
+				25%{
+					background-color: orange;
+				}
+				50%{
+					background-color: yellow;
+				}
+				75%{
+					background-color: purple;
+				}
+				to {
+					background-color: blue;
+				}
+            }
+            div{
+                width: 150px;
+                height: 150px;
+                margin: 50px 30px;
+                border: 3px solid gray;
+                background-color: tomato;
+            }
+			div:hover{                 
+				animation-name: backgroundColorAnimation;
+				animation-duration: 5s;
+				animation-timing-function: ease-in-out;
+				animation-iteration-count: 3;
+				animation-direction: alternate;
+				animation-fill-mode: forwards;
+			}
+        </style>
+    </head>
+    <body>
+        <div></div>
+		<div></div>
+		<div></div>
+    </body>
+</html>

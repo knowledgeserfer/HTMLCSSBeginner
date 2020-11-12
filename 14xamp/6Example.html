@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Fonts</title>
+		<!--
+			underline: underlines the text
+
+			overline: overlines text, draws top line
+
+			line-through: strikethrough text
+
+			none: no decoration applied to the text
+		-->
+        <style>
+			p.under{
+				text-decoration: underline;
+			}
+			p.over{
+				text-decoration: overline;
+			}
+			p.line{
+				text-decoration: line-through;
+			}
+			p.mixed{
+				text-decoration: underline line-through;
+			}
+			a.none{
+				text-decoration: none;
+			}
+        </style>
+    </head>
+    <body>
+	<div>
+		<p class="under"> This is underlined text. </p>
+		<p class="over"> This is overlined text </p>
+		<p class="line"> This is strikethrough text </p>
+		<p class="mixed"> This is underlined and strikethrough text </p>
+		<p> Not underlined <a href="#" class="none"> link </a> </p>
+	</div>
+    </body>
+</html>

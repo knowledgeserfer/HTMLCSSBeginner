@@ -1,0 +1,46 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			The transition-timing-function properties allow you to control the speed of the animation and how it runs. That is, this property is responsible for how and at what points in time the animation will accelerate or decelerate.
+
+			This property can take one of the functions as a value:
+
+			linear : linear easing function, property changes evenly over time
+
+			ease : a ease function that accelerates the animation towards the middle and slows down towards the end, providing a more natural change
+
+			ease-in : ease function that only accelerates at the start
+
+			ease-out : ease function that only accelerates at the end of the animation
+
+			ease-in-out : an ease function that accelerates the animation towards the middle and decelerates towards the end, providing a more natural change
+
+			cubic-bezier - Cubic bezier is used for animation 
+		-->
+        <style>
+			div{
+                width: 150px;
+                height: 150px;
+                margin: 50px 30px;
+                border: 3px solid gray;
+                background-color: tomato;
+                transition-property: background-color, width, height;
+                transition-duration: 5s, 2s, 2s;
+				transition-timing-function: ease-in-out;
+            }
+            div:hover{
+                background-color: yellow;
+				width: 180px;
+                height: 180px;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+		<div></div>
+		<div></div>
+    </body>
+</html>

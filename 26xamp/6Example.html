@@ -1,0 +1,49 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			Fixed sizes
+			grid-template-columns: repeat(3, 150px);
+            grid-template-rows: repeat(3, 70px);
+			
+			Auto
+			grid-template-columns: 150px auto auto;
+			grid-template-rows: auto 70px auto;
+			
+		-->
+        <style>
+			.grid-container {
+                border: 3px solid gray;
+                display: grid;
+				grid-template-columns: 150px auto auto;
+				grid-template-rows: auto 70px auto;
+            }
+ 
+            .grid-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: white;
+            }
+ 
+            .color1{background-color: tomato;}
+            .color2{background-color: darkgray;}
+            .color3{background-color: orange;}
+            .color4{background-color: black;}
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item color1">Grid Item 1</div>
+            <div class="grid-item color2">Grid Item 2</div>
+            <div class="grid-item color3">Grid Item 3</div>
+            <div class="grid-item color4">Grid Item 4</div>
+            <div class="grid-item color1">Grid Item 5</div>
+			<div class="grid-item color2">Grid Item 6</div>
+            <div class="grid-item color3">Grid Item 7</div>
+            <div class="grid-item color4">Grid Item 8</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			With the repeat function we discussed earlier, we can replicate columns and rows that are created between named grid lines
+		-->
+        <style>
+			*{
+                box-sizing: border-box;
+            }
+            html, body{
+                margin:0;
+                padding:0;
+            }
+            .grid-container {
+				display: grid;
+                height:100vh;
+                grid-template-columns: 15px repeat(3, [column] 1fr [colgap] 10px);
+                grid-template-rows: 10px repeat(2, [row] 1fr [rowgap] 10px);
+            }
+             
+            .grid-item {
+                background-color: tomato;
+				color:white;
+				font-size: 22px;
+            }
+             
+            .special-item{
+                grid-column: column 2;
+                grid-row: row 1;
+                background-color: darkgray;
+            }
+            .item1{
+                grid-column: column 1;
+                grid-row: row 1;
+            }
+            .item2{
+                grid-column: column 3;
+                grid-row: row 1;
+            }
+            .item3{
+                grid-column: column 1;
+                grid-row: row 2;
+            }
+            .item4{
+                grid-column: column 2;
+                grid-row: row 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item special-item"></div>
+            <div class="grid-item item1"></div>
+            <div class="grid-item item2"></div>
+            <div class="grid-item item3"></div>
+            <div class="grid-item item4"></div>
+        </div>
+    </body>
+</html>

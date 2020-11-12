@@ -1,0 +1,64 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			In Grid Layout, we can name each grid line by giving it a name in square brackets and then using that name to position the elements.
+		-->
+        <style>
+			*{
+                box-sizing: border-box;
+            }
+            html, body {
+                padding: 0;
+                margin: 0;
+            }
+ 
+            .grid-container {
+                display: grid;
+                height: 100vh;
+                grid-template-rows: 7em 15px 1fr;
+                grid-template-columns: [mainStart] 1fr [mainEnd] 10px [sidebareStart] 25% [sidebarEnd];
+            }
+ 
+            .grid-item-content {
+                background-color: tomato;
+                grid-row: 3 / 4;
+                grid-column: mainStart / mainEnd;
+            }
+ 
+            .grid-item-sidebar {
+                background-color: tomato;
+                grid-row: 3 / 4;
+                grid-column: sidebareStart / sidebarEnd;
+            }
+ 
+            .grid-item-header{
+                background-color: tomato;
+                grid-row: 1 / 2;
+                grid-column: mainStart / sidebarEnd;
+            }
+ 
+            .grid-item {
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="grid-container">
+            <header class="grid-item grid-item-header">
+                <h1>Header goes here</h1>
+            </header>
+                 
+            <article class="grid-item grid-item-content">
+                <h1>Main goes here</h1>
+            </article>
+             
+            <aside class="grid-item grid-item-sidebar">
+                <h1>Sidebar goes here</h1>
+            </aside>
+        </main>
+    </body>
+</html>

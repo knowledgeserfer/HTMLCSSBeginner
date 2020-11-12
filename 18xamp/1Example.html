@@ -1,0 +1,38 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			Outline in CSS 3 is represented by the outline property , although this property is shorthand for the following properties:
+			outline-color : outline color
+			outline-offset : outline offset
+			outline-style : outline style . It takes on the same meanings as border-style:
+			none: no outline
+			solid: a regular line outline
+			dashed: dashed line
+			dotted: line as a sequence of points
+			double: two parallel lines contour
+			outline-width : outline thickness
+			
+			A property outlinecan shorten this contour definition as follows:
+			outline: 3px dashed tomato;
+		-->
+        <style>
+			div{
+            width: 130px;
+            height: 100px;
+            margin: 20px;
+            border: 5px solid black;
+            background-color: gray;
+            outline-color: tomato;
+            outline-style: dashed;
+            outline-width: 5px;
+			outline-offset: -5px;
+        }
+        </style>
+    </head>
+    <body>
+        <div>Element outlines</div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Child pseudo-classes</title>
+        <style>
+			span:only-of-type{
+				color:green; /* green color */
+			}
+			p:only-of-type{
+				color: red; /* Red color */
+			}
+			div:only-of-type{
+				color: blue; /* Blue colour */
+			}
+        </style>
+    </head>
+    <body>
+		<div>
+			Header
+		</div>
+		<p>Single paragraph and <span>span</span></p>
+		<div>
+			Footer
+		</div>
+	</body>
+</html>

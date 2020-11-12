@@ -1,0 +1,52 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			As you can see in the screenshot, in reality the property value width- 200px - determines only the width of the inner content of the element, and a space will be allocated for the block of the element itself, the width of which is equal to the width of the inner content (the width property) + padding (padding property) + border width (property border-width) + padding (margin property). That is, the element will have a width of 230 pixels, and the width of the element block, including margins, will be 250 pixels.
+
+			Such calculations should be taken into account when sizing elements.
+			Using an additional set of properties, you can set the minimum and maximum sizes:
+			min-width: minimum width
+			max-width: maximum width
+			min-height: minimum height
+			max-height: maximum height
+			min-width: 200px;
+			width: 50%;
+			max-width: 300px;
+		-->
+        <style>
+			div{
+				height: 100px;
+				margin: 10px;
+				padding: 10px;
+				border: 5px solid black;
+				background-color: tomato;				
+			}
+			div.outer{
+				width: 300px;
+			}
+			div.outer1{
+				width: 80%;
+				min-width: 300px;
+			}
+			div.outer2{
+				width: 70%;
+				max-width: 600px;
+			}
+			
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            Determination of size
+        </div>
+		<div class="outer1">
+            Determination of size
+        </div>
+		<div class="outer2">
+            Determination of size
+        </div>
+    </body>
+</html>

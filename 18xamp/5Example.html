@@ -1,0 +1,45 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			the overflow property allows you to customize the behavior of the block in such a situation and add the ability to scroll. This property can take the following values:
+
+			auto: if the content is outside the bounds of the block, a scroll is created. In other cases, scroll bars are not displayed
+			hidden: Displays only the visible portion of the content. Content that falls outside the box is not displayed and scrollbars are not generated
+			scroll: the block displays scrollbars, even if the content all fits within the block boundaries, and such scrollbars are not required
+			visible: default, content is displayed even if it is outside the block boundaries
+
+			The property overflow controls the scroll bars both vertically and horizontally. With the additional properties overflow-x and overflow-y, you can define scrolling horizontally and vertically, respectively. These properties take on the same values ​​as overflow:
+
+			overflow-x: auto;
+			overflow-y: hidden;
+		-->
+        <style>
+			.article1{
+			width: 300px;
+			height: 300px;
+			margin: 15px;
+			border: 3px solid tomato;
+			overflow: scroll;
+		}
+		.article2{
+			width: 300px;
+			height: 150px;
+			margin: 15px;
+			border: 3px solid tomato;
+			overflow: visible;
+		}
+        </style>
+    </head>
+    <body>
+			<div class = "article1">
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class = "article2">
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+            
+    </body>
+</html>

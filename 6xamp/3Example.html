@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!--some comment -->
+        <meta charset="utf-8">
+        <title>Form elements</title>
+    </head>
+    <body>
+        <!--
+			The actual action of input element depends on what value is set for its type attribute . And it can take the following values:
+
+			text : plain text field
+
+			password : also a text field, only asterisks are displayed instead of the entered characters, therefore it is mainly used to enter a password
+
+			radio : radio button or switch. Only one can be selected from a group of radio buttons
+
+			checkbox : a checkbox element that may be in a marked or unchecked state
+
+			hidden : hidden field
+
+			submit : form submit button
+
+			color : color input field
+
+			date : date input field
+
+			datetime : field for entering date and time, taking into account the time zone
+
+			datetime-local : field for entering date and time, excluding time zone
+
+			email : field for entering an email address
+
+			month : field for entering the year and month
+
+			number : field for entering numbers
+
+			range : slider to select a number from a certain range
+
+			tel : phone input field
+
+			time : field for entering time
+
+			week : field for entering the year and week
+
+			url : field for entering url
+
+			file : field for selecting the file to be sent
+
+			image : creates a button as a picture
+
+			In addition to the input element, in various modifications there is still a small set of elements that can also be used on the form:
+
+			button : creates a button
+
+			select : drop down list
+
+			label : creates a label that appears next to the input field
+
+			textarea : multiline text field
+			
+			All input elements can be set to name and value. These attributes are important. By the attribute, name we can identify the input field, and the attribute value allows you to set the value of the input field.
+		-->
+		
+		<form method="post" action="">
+            <input type="text" name="login" value="Sam"/>
+            <input type="password" name="password"/>
+            <input type="submit" value="Sign in" />
+        </form>
+    </body>
+</html>

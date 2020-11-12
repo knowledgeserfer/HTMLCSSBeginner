@@ -1,0 +1,33 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			Percentages for the width property are calculated based on the width of the container element. If, for example, the body element on a web page <div>has a width of 1000 pixels, and the element inside it is 75% wide, then the actual width of this block <div>is 1000 * 0.75 = 750 pixels. If the user resizes the browser window, then the width of the body element, and thus the width of the nested div, will also change.
+		-->
+        <style>
+			div.outer{
+            width: 75%;
+			padding:10px;
+            height: 200px;
+            margin: 10px;
+            border: 5px solid black;
+            background-color: gray;
+        }
+        div.inner{
+         
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            border: 5px solid white;
+            background-color: tomato;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="inner"></div>
+        </div>
+    </body>
+</html>

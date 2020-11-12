@@ -1,0 +1,46 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			border-collapse : sets how the border of adjacent cells will be styled
+			border-spacing : sets the spacing between the borders of adjacent cells
+			caption-side : sets the position of the caption element
+			empty-cells : Sets the rendering mode for empty cells
+			table-layout : determines the size of the table
+		-->
+        <style>
+			table{
+			border: 3px solid black;
+			border-spacing: 15px;
+		}
+		
+		td, th{
+            border: solid 2px orange;
+        }
+		.collapsed{
+			border-collapse: collapse;
+		}
+		.separated{
+			border-collapse: separate;
+		}
+        </style>
+    </head>
+    <body>
+		<h3> Collapse </h3>
+		<table class = "collapsed">
+			<tr><th>Model</th><th> Manufacturer</th><th> Price</th> </tr>
+			<tr> <td>GT63 i9-9880H/32GB/512+1TB/Win10 RTX2080</td> <td>MSI</td> <td>152000</td> </tr>
+			<tr> <td>ROG Zephyrus Duo 15 GX550LXS-HC141R</td> <td>Asus</td> <td>134000</td> </tr>
+			<tr> <td>Surface Laptop 3 - 15" i7/1000/32</td> <td>Microsoft</td> <td>125000</td> </tr>
+		</table>
+		<h3> Separate </h3>
+		<table class = "separated">
+			<tr><th>Model</th><th> Manufacturer</th><th> Price</th> </tr>
+			<tr> <td>GT63 i9-9880H/32GB/512+1TB/Win10 RTX2080</td> <td>MSI</td> <td>152000</td> </tr>
+			<tr> <td>ROG Zephyrus Duo 15 GX550LXS-HC141R</td> <td>Asus</td> <td>134000</td> </tr>
+			<tr> <td>Surface Laptop 3 - 15" i7/1000/32</td> <td>Microsoft</td> <td>125000</td> </tr>
+		</table>
+    </body>
+</html>

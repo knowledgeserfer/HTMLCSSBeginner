@@ -1,0 +1,29 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			To create a transition, first of all, two sets of CSS properties are needed: the initial style, which the element will have at the beginning of the transition, and the final style, which is the result of the transition.
+		-->
+        <style>
+			div{
+                width: 150px;
+                height: 150px;
+                margin: 50px 30px;
+                border: 3px solid gray;
+                background-color: tomato;
+                transition-property: background-color;
+                transition-duration: 5s;
+            }
+            div:hover{
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+		<div></div>
+		<div></div>
+    </body>
+</html>

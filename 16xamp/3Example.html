@@ -1,0 +1,36 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			The border-radius property allows the border to be rounded. This property accepts a radius value in pixels or em units.
+			border-radius: 15px 30px 5px 40px;
+			border-top-left-radius: 15px; / * radius for top left corner * /
+			border-top-right-radius: 30px; / * radius for top right corner * /
+			border-bottom-right-radius: 5px; / * radius for bottom left corner * /
+			border-bottom-left-radius: 40px; / * radius for bottom right corner * /
+		-->
+        <style>
+			div{
+				width: 500px;
+				height: 200px;
+				border: 5px solid tomato;
+				border-radius: 50px;
+			}
+			div.circled{
+				
+				border-radius: 50%;
+			}
+			div.clock{
+				border-radius: 5px 10px 20px 40px;
+			}
+			
+        </style>
+    </head>
+    <body>
+        <div></div>
+		<div class="circled"></div>
+		<div class="clock"></div>
+    </body>
+</html>

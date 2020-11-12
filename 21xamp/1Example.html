@@ -1,0 +1,33 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			The property transform uses the rotate function to rotate an element :
+
+			transform: rotate (rotation_ angle deg);
+			The word rotate is followed by the value of the rotation angle in degrees in brackets.
+		-->
+        <style>
+			div{
+                background-color: tomato;
+                width: 150px;
+                height: 150px;
+				display: inline-block;
+                margin:20px;
+                padding: 50px 10px;
+                box-sizing: border-box;
+                border: 3px solid gray;
+            }
+            .rotated{
+                transform: rotate(90deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div class="rotated">rotate(45deg)</div>
+        <div></div>
+    </body>
+</html>

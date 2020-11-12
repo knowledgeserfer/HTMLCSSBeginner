@@ -1,0 +1,123 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			border: 3px solid tomato;
+			Several properties can be used to customize the border:
+			border-width : sets the width of the border
+			border-style : sets the style of the border line
+			border-color : sets the border color
+			
+			The property border-style forms the line type of the border and can take one of the following values:
+			none: no border
+			solid: regular line border
+			dashed: dashed line
+			dotted: line as a sequence of points
+			double: border with two parallel lines
+			groove: the border has a three-dimensional effect
+			inset: the border seems to be pressed inward
+			outset: similar to inset, only the border protrudes outward
+			ridge: the border also realizes a three-dimensional effect
+			
+			/ * for upper border * /
+			border-top-width
+			border-top-style
+			border-top-color
+
+			/ * for lower border * /
+			border-bottom-width
+			border-bottom-style
+			border-bottom-color
+
+			/ * for left border * /
+			border-left-width
+			border-left-style
+			border-left-color
+
+			/ * for right border * /
+			border-right-width
+			border-right-style
+			border-right-color
+			
+			border: width style color
+			border-top: 3px solid tomato
+			border-bottom
+			border-left
+			border-right
+			
+			
+		-->
+        <style>
+			div{
+				margin: 10px;
+				height: 90px;
+				border-color: tomato;
+				border-width: 10px;
+			}
+			.solidBorder{
+				border-style: solid;
+			}
+			.dashedBorder{
+				border-style: dashed;
+			}
+			.dottedBorder{
+				border-style: dotted;
+			}
+			.doubleBorder{
+				border-style: double;
+			}
+			.grooveBorder{
+				border-style: groove;
+			}
+			.insetBorder{
+				border-style: inset;
+			}
+			.outsetBorder{
+				border-style: outset;
+			}
+			.ridgeBorder{
+				border-style: ridge;
+			}
+			.mixed1{
+				border-top-width:10px;
+				border-top-style: solid;
+				border-top-color: yellow;
+				
+				border-right-width:15px;
+				border-right-style: dotted;
+				border-right-color: blue;
+				
+				border-bottom-width:5px;
+				border-bottom-style: dashed;
+				border-bottom-color: green;
+				
+				border-left-width:3px;
+				border-left-style: dashed;
+				border-left-color: purple;
+			}
+			.mixed2{
+				border-top:10px solid yellow;
+				
+				border-right:15px dotted blue;
+				
+				border-bottom:5px dashed green;
+				
+				border-left:3px dashed purple;
+			}
+        </style>
+    </head>
+    <body>
+        <div class="solidBorder">Solid</div>
+		<div class="dashedBorder">Dashed</div>
+		<div class="dottedBorder">Dotted</div>
+		<div class="doubleBorder">Double</div>
+		<div class="grooveBorder">Groove</div>
+		<div class="insetBorder">Inset</div>
+		<div class="outsetBorder">Outset</div>
+		<div class="ridgeBorder">Ridge</div>
+		<div class="mixed1">Mixed1</div>
+		<div class="mixed2">Mixed2</div>
+    </body>
+</html>

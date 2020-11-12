@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Buttons</title>
+    </head>
+    <body>
+		<!--
+			have extensive configuration options. So, depending on the value of the attribute, type we can create various types of buttons:
+			submit: button used to submit the form
+			reset: form reset button
+			button: button without any special purpose
+			If the button is used to submit the form, that is, it has an attribute set type="submit", then we can set a number of additional attributes for it:
+			form: defines the form for which the submit button is assigned
+			formaction: sets the address to which the form is sent. If the form element is set to an attribute action, then it is overridden
+			formenctype: sets the format for sending data. If the form element has an attribute set enctype, then it is overridden
+			formmethod: sets the form submission method (post or get). If the form element has an attribute set method, then it is overridden
+			
+		-->
+		 <form method="get">
+            <p><input type="text" name="login"/></p>
+            <p><input type="password" name="password"/></p>
+            <p>
+                <button type="submit" formmethod="post" formaction="">Submit</button> 
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+		
+		
+		<form>
+            <p>
+                <input type="text" name="search" />
+                <input type="image" src="search.png" name="submit" />
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			Sometimes, we may find that the space in flex containers is different in size from the space required for flex items. For example:
+
+			flex items don't use all of the flex container space
+
+			flex items require more space than is available in a flex container. In this case, the elements go outside the container.
+
+			We can use the justify-content property to manage these situations . It aligns elements along the main axis - main axis (when positioned as a row horizontally, when arranged as a column - vertically) and takes the following values:
+
+			flex-start : the default that aligns the first item to the left of the container (when in a row) or top (when in a column), followed by the second, and so on.
+
+			flex-end : the last item is aligned to the right (when in a row) or bottom (when in a column) of the container, the penultimate item is aligned behind it, and so on
+
+			center : elements are centered
+
+			space-between : if there is only one item in the stock or items are outside the flex container, then this value is the same flex-start. Otherwise, the first element is left-aligned (when in a row) or top (when in a column), and the last element is aligned to the right of the container (when in a row) or bottom (when in a column). All the remaining space between them is equally distributed between the other elements.
+
+			space-around : if there is only one element in a line or elements are outside the container, then its effect is the same as the value center. Otherwise, the items equally distribute the space between the left and right edges of the container, and the distance between the first and last item and the container's borders is half the distance between the items.
+		-->
+        <style>
+			.flex-container {
+                display: flex;
+                border:3px solid black;
+            }
+			.flex-start{
+                justify-content: flex-start;
+            }
+            .flex-end{
+                justify-content: flex-end;
+            }
+            .center{
+                justify-content: center;
+            }
+            .space-between{
+                justify-content: space-between;
+            }
+            .space-around{
+                justify-content: space-around;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: black;
+            }
+			.backgroundTomato{
+				background-color: tomato;
+			}
+			.backgroundYellow{
+				background-color: yellow;
+			}
+			.backgroundOrange{
+				background-color: orange;
+			}
+        </style>
+    </head>
+    <body>
+		<h2>Flex-start</h2>
+        <div class="flex-container flex-start">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+        </div>
+		<h2>Center</h2>
+        <div class="flex-container center">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+        </div>
+        <h2>Flex-end</h2>
+        <div class="flex-container flex-end">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+        </div>
+        <h2>Space-between</h2>
+        <div class="flex-container space-between">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+        </div>
+        <h2>Space-around</h2>
+        <div class="flex-container space-around">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+        </div>
+    </body>
+</html>

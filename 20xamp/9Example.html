@@ -1,0 +1,33 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			Relative positioning is also specified using the relative value . The same top, left, right, bottom properties are applied to indicate the specific position to which the element is shifted
+		-->		
+        <style>
+			.outer {
+                position: relative;
+                left: 100px;
+                top: 50px;
+                width: 500px;
+                height: 250px;
+                border: 3px solid gray;
+            }
+            .inner{
+                position: absolute;
+                left: 100px;
+                top: 50px;
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+            }
+        </style>
+    </head>
+    <body>
+       <div class="outer">
+            <div class="inner"></div>
+        </div>
+    </body>
+</html>

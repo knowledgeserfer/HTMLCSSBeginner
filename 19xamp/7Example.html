@@ -1,0 +1,28 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			inline-block , represents an element that has a mixture of block and inline attributes. In relation to adjacent external elements, such an element is regarded as a line one. That is, it is not separated from neighboring elements by line feed. However, in relation to nested elements, it is considered block-level. And properties apply to this element width, height, margin.
+			
+		-->
+        <style>
+			 span{
+				width: 150px;
+				height: 50px;
+				background-color: tomato;
+			}
+			.inineBlockSpan{
+				display: inline-block;
+			}
+			
+        </style>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet <span>sit amet</span>, lorem ipsum dolor sit amet</p>
+        <p>Lorem ipsum dolor sit amet <span class="inineBlockSpan">sit amet</span>, lorem ipsum dolor sit amet</p>
+		<br/>
+		
+    </body>
+</html>

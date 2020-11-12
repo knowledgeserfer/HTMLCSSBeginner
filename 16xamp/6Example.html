@@ -1,0 +1,47 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+			The box-sizing property allows you to override the set sizes of elements. It can take one of the following values:
+
+			content-box: Default property value, wherein the browser to determine the actual width and height of the elements adds to the property values widthand heightthe border width and padding
+
+			border-box: tells the web browser that the element's width and height should include padding and border as part of their value. For example, let's say we have the following style:
+
+			width: 200px;
+			height: 100px;
+			margin: 10px;
+			padding: 10px;
+			border: 5px solid #ccc;
+			background-color: #eee;
+			box-sizing: border-box;
+			Here the actual width of the inner content of the block will be 200px (width) - 10px (padding-left) - 10px (padding-right) - 5px (border-left-width) - 5px (border-right-width) = 170px.
+		-->
+        <style>
+			div{
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid black;
+            background-color: tomato;
+        }
+        div.outer1{
+            box-sizing: content-box;
+        }
+        div.outer2{
+            box-sizing: border-box;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="outer1">
+            Determination of size 1
+        </div>
+        <div class="outer2">
+            Determination of size
+        </div>
+    </body>
+</html>

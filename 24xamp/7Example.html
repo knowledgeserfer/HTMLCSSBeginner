@@ -1,0 +1,52 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			The order property allows you to set a group for a flex item, thereby allowing you to override its position within the flex container. The property takes the numeric order of the group as a value. Several elements can belong to one group.
+		-->
+        <style>
+			.flex-container {
+                display: flex;
+                border: 3px solid black;
+				margin: 5px;
+				flex-flow: row wrap;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: black;
+            }
+			.backgroundTomato{
+				background-color: tomato;
+			}
+			.backgroundYellow{
+				background-color: yellow;
+			}
+			.backgroundOrange{
+				background-color: orange;
+			}
+			.group1{
+                order:-1;
+            }
+            .group2{
+                order:1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item backgroundTomato">Flex Item 1</div>
+            <div class="flex-item backgroundYellow">Flex Item 2</div>
+            <div class="flex-item backgroundOrange">Flex Item 3</div>
+			<div class="flex-item backgroundTomato">Flex Item 4</div>
+            <div class="flex-item backgroundYellow group2">Flex Item 5</div>
+            <div class="flex-item backgroundOrange group1">Flex Item 6</div>
+			<div class="flex-item backgroundTomato group1">Flex Item 7</div>
+            <div class="flex-item backgroundYellow">Flex Item 8</div>
+            <div class="flex-item backgroundOrange">Flex Item 9</div>
+        </div>
+    </body>
+</html>

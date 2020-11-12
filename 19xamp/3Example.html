@@ -1,0 +1,62 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			STEP 1
+			#menu{
+				background-color: tomato;
+				float: left;
+				width: 140px;
+			}
+			#content{
+				background-color: tomato;
+				margin-left: 160px;
+			}
+		-->
+        <style>
+			 div{
+                margin: 10px;
+                border: 3px solid gray;
+                font-size: 20px;
+                height: 90px;
+				color: white;
+            }
+            #header{ 
+                background-color: tomato;
+            }
+            #sidebar{
+                background-color: tomato;
+                float: right;
+                width: 140px;
+            }
+            #main{
+                background-color: black;
+                height: 220px;
+                margin-right: 160px;
+            }
+            #menu{
+                background-color: tomato;
+				float: right;
+				width: 140px;
+            }
+            #content{
+                background-color: tomato;
+				margin-right: 160px;
+            }
+            #footer{ 
+                background-color: tomato;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">Header goes here</div>
+        <div id="sidebar">Right sidebar</div>
+        <div id="main">
+            <div id="menu">Menu</div>
+            <div id="content">Main content</div>
+        </div>
+        <div id="footer">Footer</div>
+    </body>
+</html>

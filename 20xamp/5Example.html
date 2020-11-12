@@ -1,0 +1,103 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+		reset.css
+			STEP 1
+			html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, 
+			ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header{
+							 
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				vertical-align: baseline;
+			}
+			STEP 2
+			#nav ul:after {
+				content: " ";
+				display: table;
+				clear: both;
+			}
+			STEP 3
+			#content{
+				clear: both;
+			}
+		-->		
+        <style>
+			html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd, 
+			ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header{
+							 
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				vertical-align: baseline;
+			}
+			h1{
+				font-size: 32px;
+			}
+			*{
+                box-sizing: border-box;
+            }
+            #header{
+                background-color: tomato;
+            }
+            #nav{
+                background-color: tomato;
+                border-top: 3px solid gray;
+                border-bottom: 3px solid gray;
+            }
+            #nav ul{
+                margin-left: 0px;
+                padding-left: 0px;
+                list-style: none;
+            }
+            #nav li { 
+                float: left;
+            }
+            #nav ul a {
+                display: block;
+                width: 7em;
+                padding:10px;
+                border-left: 3px solid gray;
+                text-decoration: none;
+                color: white;
+                text-align: center;
+            }
+            #nav ul li:last-child a {
+                 
+                border-right: 3px solid gray;
+            }
+            #nav ul a:hover{
+                background-color: orange;
+                color: black;
+            }
+			#nav ul:after {
+				content: " ";
+				display: table;
+				clear: both;
+			}
+			#content{
+				clear: both;
+			}
+			
+        </style>
+    </head>
+    <body>
+       <div id="header">
+            <h1>This is a super awesome website.</h1>
+            <div id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content"><p>Some content goes in here.</p></div>
+    </body>
+</html>

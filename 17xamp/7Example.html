@@ -1,0 +1,43 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Properties</title>
+		<!--
+		 background-clip property determines which part of the image is used for the background. It takes on the same values
+		 border-box: the image is clipped to the borders of the element
+		padding-box: the part that is below the element's borders is excluded from the image
+		content-box: image is cropped to fit content with padding
+		
+		-->
+        <style>
+			div{
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            display: inline-block;
+            color: white;
+            padding:15px;
+            border: 10px solid rgba(128,128,128,0.5);
+             
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .borderBox{background-clip: border-box;}
+		.paddingBox{background-clip: padding-box;}
+		.contentBox{background-clip: content-box;}
+        </style>
+    </head>
+    <body>
+        <div class="borderBox">
+            borderBox
+        </div>
+        <div class="paddingBox">
+            paddingBox
+        </div>
+        <div  class="contentBox">
+            contentBox
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			The grid property combines properties grid-template-rows and grid-template-columns, at the same time, allows you to set settings for rows and columns in the following format:
+
+				grid: grid-template-rows / grid-template-columns;
+				grid: repeat(3, 70px) / repeat(3, 150px);
+		-->
+        <style>
+			.grid-container {
+                border: 3px solid gray;
+                display: grid;
+				grid: repeat(3, 70px) / repeat(3, 150px);
+            }
+ 
+            .grid-item{
+                text-align:center;
+                font-size: 22px;
+                padding: 10px;
+                color: white;
+            }
+ 
+            .color1{background-color: tomato;}
+            .color2{background-color: darkgray;}
+            .color3{background-color: orange;}
+            .color4{background-color: black;}
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item color1">Grid Item 1</div>
+            <div class="grid-item color2">Grid Item 2</div>
+            <div class="grid-item color3">Grid Item 3</div>
+            <div class="grid-item color4">Grid Item 4</div>
+            <div class="grid-item color1">Grid Item 5</div>
+			<div class="grid-item color2">Grid Item 6</div>
+            <div class="grid-item color3">Grid Item 7</div>
+            <div class="grid-item color4">Grid Item 8</div>
+        </div>
+    </body>
+</html>

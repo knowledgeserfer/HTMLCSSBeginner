@@ -1,0 +1,56 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>CSS3 Layout</title>
+		<!--
+			There are two methods for creating a horizontal menu. The first is to apply a property float and create floating elements from the links that flow around each other from the left. And the second way is to create a link string by setting a property display: inline-block.
+			
+			Using floats
+			The algorithm for creating a navigation bar using float is divided into two stages. In the first step, the linking li is set float: left;. This allows all the elements of the list to be arranged in a row at sufficient width when the right element of the list wraps around the left element of the list.
+			The second stage consists in setting the link to the element display: block, which allows us to set the width, padding, in general, all those features that are characteristic of block elements.
+			inline and inline-block
+			To create a horizontal navigation bar, we need to make each li element inline, that is, set for it display: inline. After that, for the element of the link that is located in the element li, we can set display: inline-block		
+			.nav li { 
+                display: inline; 
+            }
+            ul.nav a {
+                display: inline-block;
+                
+            }
+		-->		
+        <style>
+			ul.nav{
+                margin-left: 0px;
+                padding-left: 0px;
+                list-style: none;
+            }
+            .nav li { 
+                float: left;
+            }
+            ul.nav a {
+                display: block;
+				color: white;
+                width: 5em;
+                padding:10px;
+                margin: 0 5px;
+                background-color: tomato;
+                border: 3px dotted gray;
+                text-decoration: none;
+                text-align: center;
+            }
+            ul.nav a:hover{
+                background-color: orange;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </body>
+</html>
